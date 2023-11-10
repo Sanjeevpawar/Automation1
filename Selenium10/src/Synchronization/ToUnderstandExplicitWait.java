@@ -27,7 +27,7 @@ public class ToUnderstandExplicitWait {
 		button.click();
 		System.out.println(driver.findElement(By.xpath("//p[contains(text(),'Deliveriable')]")).getText());	
 		
-		
+														//p[contains(text(),'Deliverable')]
 				
 	}
 

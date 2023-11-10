@@ -2,7 +2,7 @@ package basic;
 
 public class ReverseNumber {
 	public static void main(String[] args) {
-		int num=123;
+		int num=12;
 		int rem,rev=0;
 		
 		while(num!=0)

@@ -3,12 +3,27 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="configAnnotations.TC_002">
+      <class name="testScripts.Mahindra">
         <methods>
-          <include name="leadspageDisplayed"/>
-          <include name="browserSetup"/>
+          <include name="closeBrowser"/>
+          <include name="mahindra"/>
+          <include name="launchBrowser"/>
         </methods>
-      </class> <!-- configAnnotations.TC_002 -->
+      </class> <!-- testScripts.Mahindra -->
+      <class name="testScripts.bmw">
+        <methods>
+          <include name="bmwcar"/>
+          <include name="closeBrowser"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- testScripts.bmw -->
+      <class name="testScripts.kia">
+        <methods>
+          <include name="Kia"/>
+          <include name="closeBrowser"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- testScripts.kia -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

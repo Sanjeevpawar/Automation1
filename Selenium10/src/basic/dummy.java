@@ -1,6 +1,6 @@
 package basic;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 public class dummy {
 

@@ -18,6 +18,7 @@ public class Excel {
 		
 		// Step 3 : Read methods
 		double data= workbook.getSheet("Sheet1").getRow(1).getCell(1).getNumericCellValue();
+		workbook.getSheet("Sheet1").getRow(1).getCell(1).
 		System.out.println(data);
 		
 		

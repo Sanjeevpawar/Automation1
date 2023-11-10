@@ -20,6 +20,8 @@ public class BaseClass {
 	public WebDriver driver;
 
 	@Parameters("browserName")
+	
+	
 	@BeforeClass
 	public void browserLaunch(@Optional("chrome") String browserName) {
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");

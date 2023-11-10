@@ -21,6 +21,7 @@ public class EnterDataWithoutSendKeys {
 		JavascriptExecutor js=driver;
 		js.executeScript("arguments[0].value='Automation'", search);
 		driver.findElement(By.id("nav-search-submit-button")).click();
+
 	}
 	}
 
