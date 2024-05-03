@@ -6,7 +6,7 @@ public class A1 {
 
 	public static void main(String[] args) {
 
-		ArrayList vegetables=new ArrayList();
+		ArrayList vegetables=new ArrayList(5);
 		
 		vegetables.add("carrot");
 		vegetables.add("cucumber");
@@ -25,9 +25,6 @@ public class A1 {
 		
 		System.out.println(vegetables);
 		
-		vegetables.remove(3);
-		vegetables.remove(b);
-		System.out.println(vegetables);
 	}
 
 }

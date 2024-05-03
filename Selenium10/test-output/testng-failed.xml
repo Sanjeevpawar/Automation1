@@ -3,27 +3,34 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testScripts.Mahindra">
+      <class name="PracticeFrameworkCreation.Mahindra">
         <methods>
-          <include name="closeBrowser"/>
           <include name="mahindra"/>
-          <include name="launchBrowser"/>
+          <include name="SelectingBrowser"/>
+          <include name="closebrowser"/>
         </methods>
-      </class> <!-- testScripts.Mahindra -->
-      <class name="testScripts.bmw">
+      </class> <!-- PracticeFrameworkCreation.Mahindra -->
+      <class name="PracticeFrameworkCreation.kia">
+        <methods>
+          <include name="SelectingBrowser"/>
+          <include name="closebrowser"/>
+          <include name="Kia"/>
+        </methods>
+      </class> <!-- PracticeFrameworkCreation.kia -->
+      <class name="PracticeFrameworkCreation.TATA">
+        <methods>
+          <include name="SelectingBrowser"/>
+          <include name="tata"/>
+          <include name="closebrowser"/>
+        </methods>
+      </class> <!-- PracticeFrameworkCreation.TATA -->
+      <class name="PracticeFrameworkCreation.bmw">
         <methods>
           <include name="bmwcar"/>
-          <include name="closeBrowser"/>
-          <include name="launchBrowser"/>
+          <include name="SelectingBrowser"/>
+          <include name="closebrowser"/>
         </methods>
-      </class> <!-- testScripts.bmw -->
-      <class name="testScripts.kia">
-        <methods>
-          <include name="Kia"/>
-          <include name="closeBrowser"/>
-          <include name="launchBrowser"/>
-        </methods>
-      </class> <!-- testScripts.kia -->
+      </class> <!-- PracticeFrameworkCreation.bmw -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

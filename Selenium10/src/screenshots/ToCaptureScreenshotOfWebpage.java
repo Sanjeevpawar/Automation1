@@ -15,10 +15,14 @@ public class ToCaptureScreenshotOfWebpage {
 		ChromeDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+	
+		
 		driver.get("https://dream11.com");
 		File src = driver.getScreenshotAs(OutputType.FILE);
 		File destination= new File("./Screenshots/img.png");
 		FileHandler.copy(src, destination);
+		
+		
 	}
 
 }

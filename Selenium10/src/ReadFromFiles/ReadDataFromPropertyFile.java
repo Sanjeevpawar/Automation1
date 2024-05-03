@@ -15,7 +15,7 @@ public class ReadDataFromPropertyFile {
 		
 		Properties prop = new Properties();
 		prop.load(fis);
-		prop.
+		
 		System.out.println(prop.get("name"));
 		System.out.println(prop.get("subject"));
 		System.out.println(prop.get("Students"));

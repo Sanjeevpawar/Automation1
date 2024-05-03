@@ -22,7 +22,10 @@ public class UpdateProfile {
 		driver.findElement(By.id("usernameField")).sendKeys("sanjeevpawar19@gmail.com");
 		driver.findElement(By.id("passwordField")).sendKeys("Seltoshtx@123");
 		driver.findElement(By.xpath("//button[contains(text(),'Login')]")).click();
-		driver.findElement(By.xpath("//em[contains(text(),'editOneTheme')]")).click();
+		//driver.findElement(By.xpath("//div[@class='nI-gNb-drawer__bars']")).click();
+		driver.findElement(By.partialLinkText("View")).click();
+		
+		driver.findElement(By.xpath("//span[contains(text(),'editOneTheme')]")).click();
 		driver.findElement(By.xpath("//input[contains(@placeholder,'Eg. 4,50,000')]")).clear();
 		driver.findElement(By.xpath("//input[contains(@placeholder,'Eg. 4,50,000')]")).sendKeys("1");
 		

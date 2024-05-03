@@ -20,6 +20,6 @@ public class DisabledElementClick {
 		
 		JavascriptExecutor js=driver;
 		js.executeScript("arguments[0].click()", search);
-	}
-
+		
+}
 }

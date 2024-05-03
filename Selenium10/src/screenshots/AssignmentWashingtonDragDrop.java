@@ -18,8 +18,12 @@ public class AssignmentWashingtonDragDrop {
 		ChromeDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+	
+		
 		driver.get("http://www.dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html");
 		WebElement fram = driver.findElement(By.id("mainContainer"));
+		
+		
 		Actions action=new Actions(driver);
 		WebElement washington = driver.findElement(By.id("box3"));
 		WebElement US = driver.findElement(By.id("box103"));
@@ -27,6 +31,9 @@ public class AssignmentWashingtonDragDrop {
 		action.dragAndDrop(washington,US).perform();
 		action.contextClick(US).perform();
 		Thread.sleep(2000);
+		
+		
+		
 		File src=driver.getScreenshotAs(OutputType.FILE);
 		File dest=new File("./Screenshots/rightclickUS.png");
 		FileHandler.copy(src, dest);

@@ -2,6 +2,7 @@ package PopUp;
 
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -23,8 +24,11 @@ public class ToClickOnCancelButton {
 		obj.moveToElement(login).perform();
 	    driver.findElement(By.linkText("Agent Portal")).click();
 	    Thread.sleep(2000);
-	    driver.switchTo().alert().dismiss();
-	    driver.quit();
+	    
+	    Alert alert=driver.switchTo().alert();
+	    
+	    System.out.println(alert.getText());
+	 
 	   
 	   
 		

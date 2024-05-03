@@ -20,7 +20,7 @@ public class practice {
 		Alert pop = driver.switchTo().alert();
 		pop.accept();
 		
-		driver.quit();
+		//driver.quit();
 	}
 
 }

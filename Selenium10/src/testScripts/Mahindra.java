@@ -6,6 +6,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
+import PracticeFrameworkCreation.BaseClass1;
+
 public class Mahindra extends BaseClass{
 	@Test
 	public void mahindra()

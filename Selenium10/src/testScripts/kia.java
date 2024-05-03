@@ -6,7 +6,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-public class kia extends BaseClass {
+import PracticeFrameworkCreation.BaseClass1;
+
+public class kia extends BaseClass{
+
 	@Test
 	public void Kia()
 	{

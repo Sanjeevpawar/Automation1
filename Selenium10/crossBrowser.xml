@@ -13,19 +13,7 @@
 <class name="exploreConfig.TC_DWS_003"/>
 </classes>
 </test>
-<!--  Test  -->
-<test thread-count="5" name="FirefoxTest">
-<parameter name="browserName" value="firefox"/>
-<classes>
-<class name="exploreConfig.TC_DWS_004"/>
-<class name="exploreConfig.TC_DWS_005"/>
-<class name="exploreConfig.TC_DWS_006"/>
-<class name="exploreConfig.TC_DWS_007"/>
-<class name="exploreConfig.TC_DWS_001"/>
-<class name="exploreConfig.TC_DWS_002"/>
-<class name="exploreConfig.TC_DWS_003"/>
-</classes>
-</test>
+
 <!--  Test  -->
 <test thread-count="5" name="EdgeTest">
 <parameter name="browserName" value="edge"/>

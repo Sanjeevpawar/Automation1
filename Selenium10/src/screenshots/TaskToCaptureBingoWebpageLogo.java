@@ -17,6 +17,7 @@ public class TaskToCaptureBingoWebpageLogo {
 		ChromeDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+	
 		driver.get("https://bingosnacks.com/");
 		File page=driver.getScreenshotAs(OutputType.FILE);
 		File dest=new File("./Screenshots/Fullpage.png");
